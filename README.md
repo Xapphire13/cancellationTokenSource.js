@@ -1,0 +1,2 @@
+# cancellationTokenSource.js
+CancellationTokenSource implementation for JavaScript
