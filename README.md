@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/cancellation-token-source.svg?style=flat-square)](https://www.npmjs.com/package/cancellation-token-source)
+
 # cancellationTokenSource.js
 CancellationTokenSource implementation for JavaScript based on the
 [C# implementation of the same name](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtokensource)
