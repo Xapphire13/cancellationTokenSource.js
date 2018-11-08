@@ -1,4 +1,5 @@
 [![npm](https://img.shields.io/npm/v/cancellation-token-source.svg?style=flat-square)](https://www.npmjs.com/package/cancellation-token-source)
+[![Travis (.org)](https://img.shields.io/travis/Xapphire13/cancellationTokenSource.js.svg?style=flat-square)](https://travis-ci.org/Xapphire13/cancellationTokenSource.js)
 
 # cancellationTokenSource.js
 CancellationTokenSource implementation for JavaScript based on the
