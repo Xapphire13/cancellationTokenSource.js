@@ -1,6 +1,6 @@
 {
   "name": "cancellation-token-source",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CancellationTokenSource implementation for JavaScript",
   "keywords": [
     "cancellation",
