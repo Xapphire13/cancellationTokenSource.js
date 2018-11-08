@@ -1,8 +1,12 @@
+/**
+ * @module cancellation-token-source
+ */
+
 import CancellationToken from "./cancellation-token";
 import OperationCanceledError from "./operation-canceled-error";
 
 /**
- * Creates and signals to a CancellationToken that it should be canceled
+ * Creates and signals to a [[CancellationToken]] that it should be canceled
  */
 export default class CancellationTokenSource {
   private _isCancellationRequested: boolean;
@@ -18,7 +22,7 @@ export default class CancellationTokenSource {
   }
 
   /**
-   * Gets the CancellationToken bound to this CancellationTokenSource
+   * Gets the [[CancellationToken]] bound to this [[CancellationTokenSource]]
    */
   public get token(): CancellationToken {
     return this._token;
@@ -42,7 +46,7 @@ export default class CancellationTokenSource {
 
   /**
    * For use as a disposable
-   * Cleans up resources created by this CancellationTokenSource and cancels its CancellationToken
+   * Cleans up resources created by this [[CancellationTokenSource]] and cancels its [[CancellationToken]]
    */
   public dispose(): void {
     this.cancel();

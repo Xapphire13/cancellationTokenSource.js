@@ -1,3 +1,7 @@
+/**
+ * @module cancellation-token-source
+ */
+
 import CancellationTokenSource from "./cancellation-token-source";
 import OperationCanceledError from "./operation-canceled-error";
 
@@ -21,7 +25,7 @@ export default class CancellationToken implements PromiseLike<void> {
   }
 
   /**
-   * Throws an OperationCanceledError if cancellation has been requested for this token
+   * Throws an [[OperationCanceledError]] if cancellation has been requested for this token
    */
   public throwIfCancellationRequested(): void {
     if (this.isCancellationRequested) {
@@ -31,7 +35,7 @@ export default class CancellationToken implements PromiseLike<void> {
 
   /**
    * Races this token against the given promise. If cancellation is requested before the
-   * promise completes, then an OperationCanceledError will be thrown.
+   * promise completes, then an [[OperationCanceledError]] will be thrown.
    *
    * @return The results from the given promise
    */

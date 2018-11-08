@@ -9,9 +9,12 @@
   "private": false,
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "generate-docs": "typedoc --readme ./README.md --out ./docs --exclude **/*/index.* --excludeExternals --excludePrivate --mode modules --entryPoint cancellation-token-source"
   },
   "devDependencies": {
+    "typedoc": "^0.13.0",
+    "typedoc-plugin-external-module-name": "^1.1.3",
     "typescript": "^3.1.6"
   }
 }
