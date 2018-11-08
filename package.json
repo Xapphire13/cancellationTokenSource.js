@@ -1,6 +1,6 @@
 {
   "name": "cancellation-token-source",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "CancellationTokenSource implementation for JavaScript",
   "main": "dist/index.js",
   "repository": "https://github.com/xapphire13/cancellationTokenSource.js.git",
