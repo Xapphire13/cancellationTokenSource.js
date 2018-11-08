@@ -33,6 +33,7 @@ export default class CancellationTokenSource {
     this.promise = new Promise<void>((_res, reject) => {
       this.reject = reject;
     });
+    this.promise.catch(() => {}); // Don't cause an unhandledrejection
     this._token = new CancellationToken(this, this.promise);
   }
 

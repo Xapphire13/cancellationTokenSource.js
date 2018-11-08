@@ -40,7 +40,7 @@ export default class CancellationToken implements PromiseLike<void> {
    * @return The results from the given promise
    */
   public async race<T>(promise: Promise<T>): Promise<T> {
-    await Promise.race([promise, this]);
+    await Promise.race([this.promise, promise]);
     return promise;
   }
 
