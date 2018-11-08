@@ -17,14 +17,14 @@
   "private": false,
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "del-cli ./dist && tsc",
-    "generate-docs": "del-cli ./docs && typedoc --readme ./README.md --out ./docs --exclude **/*/index.* --excludeExternals --excludePrivate --mode modules --entryPoint cancellation-token-source",
+    "build": "rimraf ./dist && tsc",
+    "generate-docs": "rimraf ./docs && typedoc --readme ./README.md --out ./docs --exclude **/*/index.* --excludeExternals --excludePrivate --mode modules --entryPoint cancellation-token-source",
     "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^23.3.9",
-    "del-cli": "^1.1.0",
     "jest": "^23.6.0",
+    "rimraf": "^2.6.2",
     "ts-jest": "^23.10.4",
     "typedoc": "^0.13.0",
     "typedoc-plugin-external-module-name": "^1.1.3",
