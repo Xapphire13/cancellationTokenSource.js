@@ -11,7 +11,7 @@ npm install cancellation-token-source
 ```
 
 ## Usage
-```JavaScript
+```javascript
 import {CancellationTokenSource} from "cancellation-token-source";
 
 async function myAsyncFunc(cancellationToken: CancellationToken): Promise<void> {
